@@ -1,0 +1,22 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    text-align: center;
+
+    background-color: #F9F9F9;
+}
+
+.welcome-page h2 {
+    margin: 0 0 .7em;
+    padding: 0 1em;
+    width: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}

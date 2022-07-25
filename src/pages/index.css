@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+SC:wght@300&family=Quicksand:wght@300&display=swap');
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', 'Arial', 'Noto Sans SC', 'PingFang SC', sans-serif;
+    font-size: 1em;
+}
