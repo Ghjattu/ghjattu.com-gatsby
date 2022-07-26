@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "gatsby": "^4.19.2",
+    "gatsby-plugin-manifest": "^4.19.0",
+    "gatsby-plugin-offline": "^5.19.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "typed.js": "^2.0.12"
