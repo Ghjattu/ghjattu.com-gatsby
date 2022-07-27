@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
 
+    position: relative;
+
     height: 100vh;
 
     text-align: center;
@@ -11,12 +13,48 @@
     background-color: #F9F9F9;
 }
 
-.welcome-page h2 {
+.website-title {
     margin: 0 0 .7em;
     padding: 0 1em;
     width: 100%;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 100;
+    letter-spacing: .01em;
     font-size: 3rem;
+}
+
+.scroll-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 40px;
+
+    width: 30px;
+    height: 60px;
+}
+
+.arrow {
+    border-bottom: 2px solid #797979;
+    border-right: 2px solid #797979;
+    width: 20px;
+    height: 20px;
+
+    animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+    0% {
+        transform: translateY(-20px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px) rotate(45deg);
+        opacity: 0;
+    }
 }
