@@ -10,7 +10,7 @@ const WelcomePage = (props) => {
                 '悟已往之不谏，知来者之可追。',
                 '祝你好运，也祝我好运。',
             ]}/>
-            <a className="scroll-down" href="">
+            <a className="scroll-down" href="#article-card-list-wrapper">
                 <div className="arrow"></div>
             </a>
         </div>

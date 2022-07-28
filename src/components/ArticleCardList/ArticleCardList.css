@@ -1,0 +1,119 @@
+.article-card-list {
+    margin: 0 auto;
+
+    max-width: 900px;
+}
+
+.article-card {
+    margin: 1.5em 1em;
+    padding: 1em;
+}
+
+.article-title {
+    margin: 0 0 .4em;
+
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+}
+
+.article-title > a {
+    text-decoration: none;
+
+    color: #423C3C;
+
+    transition: color .3s ease;
+}
+
+.article-title > a:hover {
+    color: #FF770D;
+}
+
+.article-excerpt {
+    margin: 0 0 1.4em;
+
+    font-weight: 300;
+
+    color: #4F4B4B;
+}
+
+.article-link {
+    display: inline-block;
+
+    position: relative;
+
+    margin: 0 0 0 -.3em;
+
+    text-decoration: none;
+
+    color: #FF770D;
+}
+
+.article-link:before,
+.article-link:after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(255, 119, 13, .6);
+    transition: all .3s ease;
+}
+
+.article-link:before {
+    height: 0;
+    width: 2px;
+}
+
+.article-link:after {
+    height: 2px;
+    width: 0;
+}
+
+.article-link:hover:before {
+    height: 50%;
+}
+
+.article-link:hover:after {
+    width: 15%;
+}
+
+.article-link span {
+    display: block;
+
+    position: relative;
+
+    padding: .2em .3em;
+}
+
+.article-link span:before,
+.article-link span:after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(255, 119, 13, .6);
+    transition: all .3s ease;
+}
+
+.article-link span:before {
+    height: 0;
+    width: 2px;
+}
+
+.article-link span:after {
+    height: 2px;
+    width: 0;
+}
+
+.article-link span:hover:before {
+    height: 50%;
+}
+
+.article-link span:hover:after {
+    width: 15%;
+}

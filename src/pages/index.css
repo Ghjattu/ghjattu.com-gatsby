@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&family=MuseoModerno:wght@100;200;300&family=Noto+Sans+SC:wght@300&family=Quicksand:wght@300;400&display=swap');
-
 :root {
     box-sizing: border-box;
 }
@@ -18,7 +16,7 @@ html, body {
 body {
     margin: 0;
 
-    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', 'Arial', 'Noto Sans SC', 'PingFang SC', sans-serif;
+    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC', sans-serif;
     font-size: 1em;
 }
 
@@ -26,6 +24,10 @@ body {
     position: relative;
     z-index: 0;
 
-    margin-top: -70px;
-    height: 200vh;
+    margin: -70px 0 100px;
+    min-height: 100vh;
+}
+
+.article-card-list-wrapper {
+    padding: calc(70px + 3em) 0 0;
 }

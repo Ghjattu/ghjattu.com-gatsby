@@ -4,7 +4,7 @@
     justify-content: space-between;
 
     position: sticky;
-    top: 0;
+    top: -1px;
 
     border-bottom: 1px solid #e3e3e3;
     height: 70px;
