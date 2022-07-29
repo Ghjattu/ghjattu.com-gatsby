@@ -9,7 +9,7 @@
     padding: 1em;
 }
 
-.article-title {
+.article-card-title {
     margin: 0 0 .4em;
 
     font-size: 1.45rem;
@@ -18,7 +18,7 @@
     line-height: 1.8;
 }
 
-.article-title > a {
+.article-card-title > a {
     text-decoration: none;
 
     color: #423C3C;
@@ -26,11 +26,11 @@
     transition: color .3s ease;
 }
 
-.article-title > a:hover {
+.article-card-title > a:hover {
     color: #FF770D;
 }
 
-.article-excerpt {
+.article-card-excerpt {
     margin: 0 0 1.4em;
 
     font-weight: 300;
@@ -38,7 +38,7 @@
     color: #4F4B4B;
 }
 
-.article-link {
+.article-card-link {
     display: inline-block;
 
     position: relative;
@@ -50,8 +50,8 @@
     color: #FF770D;
 }
 
-.article-link:before,
-.article-link:after {
+.article-card-link:before,
+.article-card-link:after {
     content: "";
 
     position: absolute;
@@ -62,25 +62,25 @@
     transition: all .3s ease;
 }
 
-.article-link:before {
+.article-card-link:before {
     height: 0;
     width: 2px;
 }
 
-.article-link:after {
+.article-card-link:after {
     height: 2px;
     width: 0;
 }
 
-.article-link:hover:before {
+.article-card-link:hover:before {
     height: 50%;
 }
 
-.article-link:hover:after {
+.article-card-link:hover:after {
     width: 15%;
 }
 
-.article-link span {
+.article-card-link span {
     display: block;
 
     position: relative;
@@ -88,8 +88,8 @@
     padding: .2em .3em;
 }
 
-.article-link span:before,
-.article-link span:after {
+.article-card-link span:before,
+.article-card-link span:after {
     content: "";
 
     position: absolute;
@@ -100,20 +100,20 @@
     transition: all .3s ease;
 }
 
-.article-link span:before {
+.article-card-link span:before {
     height: 0;
     width: 2px;
 }
 
-.article-link span:after {
+.article-card-link span:after {
     height: 2px;
     width: 0;
 }
 
-.article-link span:hover:before {
+.article-card-link span:hover:before {
     height: 50%;
 }
 
-.article-link span:hover:after {
+.article-card-link span:hover:after {
     width: 15%;
 }

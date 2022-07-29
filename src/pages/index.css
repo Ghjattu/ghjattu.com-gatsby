@@ -1,3 +1,5 @@
+@import url('https://fonts.loli.net/css2?family=Montserrat+Alternates:wght@200&family=MuseoModerno:wght@100;300&family=Noto+Sans+SC:wght@300&family=Noto+Serif+SC:wght@300&family=Quicksand:wght@300;400;700&display=swap');
+
 :root {
     box-sizing: border-box;
 }
@@ -24,7 +26,7 @@ body {
     position: relative;
     z-index: 0;
 
-    margin: -70px 0 100px;
+    margin: -71px 0 100px;
     min-height: 100vh;
 }
 

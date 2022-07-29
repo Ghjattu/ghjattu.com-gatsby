@@ -4,7 +4,8 @@
     justify-content: space-between;
 
     position: sticky;
-    top: -1px;
+    top: 0;
+    z-index: 1;
 
     border-bottom: 1px solid #e3e3e3;
     height: 70px;
@@ -17,6 +18,8 @@
 }
 
 .nav-title {
+    margin: 0;
+
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 2rem;
     font-weight: 400;

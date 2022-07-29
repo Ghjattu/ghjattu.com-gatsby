@@ -36,10 +36,5 @@ export default IndexPage
 export const Head = (props) => (
     <>
         <title>{props.data.site.siteMetadata.title}</title>
-        <link rel="preconnect" href="https://fonts.loli.net"></link>
-        <link rel="preconnect" href="https://gstatic.loli.net" crossOrigin></link>
-        <link
-            href="https://fonts.loli.net/css2?family=Montserrat+Alternates:wght@200&family=MuseoModerno:wght@100;300&family=Noto+Sans+SC:wght@300;400&family=Quicksand:wght@400&display=swap"
-            rel="stylesheet"></link>
     </>
 )

@@ -24,12 +24,13 @@ const ArticleCardList = () => {
             {
                 data.allMarkdownRemark.nodes.map(node =>
                     <article className="article-card" key={node.id}>
-                        <time className="article-date">{node.frontmatter.date}</time>
-                        <h3 className="article-title">
-                            <Link to="/">{node.frontmatter.title}</Link>
+                        <time className="article-card-date">{node.frontmatter.date}</time>
+                        <h3 className="article-card-title">
+                            <Link to={`/article/${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
                         </h3>
-                        <p className="article-excerpt" dangerouslySetInnerHTML={{__html: node.excerpt}}></p>
-                        <Link to="/" className="article-link"><span>READ MORE</span></Link>
+                        <p className="article-card-excerpt" dangerouslySetInnerHTML={{__html: node.excerpt}}></p>
+                        <Link to={`/article/${node.frontmatter.slug}`}
+                              className="article-card-link"><span>READ MORE</span></Link>
                     </article>
                 )
             }
