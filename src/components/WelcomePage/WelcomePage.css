@@ -33,8 +33,14 @@
     position: absolute;
     bottom: 40px;
 
+    border: none;
+    padding: 0;
     width: 30px;
     height: 60px;
+
+    background: none;
+
+    cursor: pointer;
 }
 
 .arrow {
