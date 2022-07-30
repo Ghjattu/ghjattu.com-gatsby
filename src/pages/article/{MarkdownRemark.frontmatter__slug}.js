@@ -1,6 +1,7 @@
 import React from "react";
 import {graphql} from "gatsby";
 import StickyNavigation from "../../components/StickyNavigation/StickyNavigation";
+import Footer from "../../components/Footer/Footer";
 import {NewWindowForLink} from "../../utils/utils";
 import "katex/dist/katex.min.css";
 import "./ArticleTemplate.css"
@@ -25,6 +26,7 @@ class ArticleTemplate extends React.Component {
                         <div className="article-body" dangerouslySetInnerHTML={{__html: data.html}}></div>
                     </article>
                 </div>
+                <Footer/>
             </div>
         );
     }

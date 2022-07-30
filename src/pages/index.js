@@ -2,6 +2,7 @@ import React from "react";
 import WelcomePage from "../components/WelcomePage/WelcomePage";
 import StickyNavigation from "../components/StickyNavigation/StickyNavigation";
 import ArticleCardList from "../components/ArticleCardList/ArticleCardList";
+import Footer from "../components/Footer/Footer";
 import {graphql} from "gatsby";
 import './index.css';
 
@@ -17,6 +18,7 @@ const IndexPage = (props) => {
                     <ArticleCardList/>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

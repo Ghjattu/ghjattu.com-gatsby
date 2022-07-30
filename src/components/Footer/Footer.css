@@ -1,0 +1,44 @@
+.footer {
+    padding: 2.4em 0;
+
+    /*background-color: #F2F2F2;*/
+    background-color: #34373C;
+}
+
+.technology {
+    display: flex;
+    justify-content: center;
+}
+
+.technology span {
+    padding: 0 .5em;
+
+    text-transform: capitalize;
+
+    /*color: #34373C;*/
+    color: #F2F2F2;
+
+    transition: color .3s ease;
+}
+
+.technology > nav {
+    display: flex;
+    align-items: center;
+}
+
+.technology > nav > span {
+    margin: 0 2em 0 0;
+}
+
+.technology a {
+    display: flex;
+    align-items: center;
+
+    margin: 0 .8em;
+
+    text-decoration: none;
+}
+
+.technology a > span:hover {
+    color: #FF770D;
+}
