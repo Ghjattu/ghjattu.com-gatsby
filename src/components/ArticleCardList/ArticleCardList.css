@@ -1,12 +1,20 @@
 .article-card-list {
+    overflow: auto;
+
     margin: 0 auto;
 
     max-width: 900px;
 }
 
 .article-card {
-    margin: 1.5em 1em;
+    margin: .4em 1em;
     padding: 1em;
+}
+
+@media (min-width: 35em) {
+    .article-card {
+        margin: 1.5em 1em;
+    }
 }
 
 .article-card-title {

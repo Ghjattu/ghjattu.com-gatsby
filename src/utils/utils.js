@@ -6,6 +6,7 @@ export const NewWindowForLink = () => {
         const href = link.getAttribute('href');
         if (href.indexOf('https') !== -1) {
             link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
         }
     });
 };

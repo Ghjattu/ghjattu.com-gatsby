@@ -21,10 +21,16 @@
     margin: 0;
 
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
 
     color: #404040;
+}
+
+@media (min-width: 35em) {
+    .nav-title {
+        font-size: 2rem;
+    }
 }
 
 .nav-list {
@@ -54,5 +60,9 @@
 
     color: #676767;
 
-    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.nav-list > li > a:hover {
+    color: #FF770D;
 }

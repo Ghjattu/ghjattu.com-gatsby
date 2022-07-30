@@ -18,7 +18,7 @@ const WelcomePage = (props) => {
                 '悟已往之不谏，知来者之可追。',
                 '祝你好运，也祝我好运。',
             ]}/>
-            <button className="scroll-down" onClick={handleClick} onKeyDown={handleClick}>
+            <button className="scroll-down" name="scroll-down" onClick={handleClick} onKeyDown={handleClick}>
                 <div className="arrow"></div>
             </button>
         </div>
