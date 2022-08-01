@@ -2,6 +2,7 @@ import React from "react";
 import {graphql} from "gatsby";
 import StickyNavigation from "../../components/StickyNavigation/StickyNavigation";
 import Footer from "../../components/Footer/Footer";
+import {SEO} from "../../components/seo";
 import {NewWindowForLink} from "../../utils/utils";
 import "katex/dist/katex.min.css";
 import "./ArticleTemplate.css"
@@ -53,7 +54,6 @@ export const query = graphql`
 export default ArticleTemplate
 
 export const Head = (props) => (
-    <>
-        <title>{props.data.site.siteMetadata.title}</title>
-    </>
+    <SEO title={props.data.markdownRemark.frontmatter.title}
+         description={props.data.markdownRemark.frontmatter.title}/>
 )

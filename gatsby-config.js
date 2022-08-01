@@ -1,7 +1,9 @@
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: `https://www.ghjattu.cn`,
         title: 'Ghjattu',
+        description: `Ghjattu's blog.The content includes programming contest problem solutions, front-end study notes, etc.`,
+        author: 'Ghjattu',
     },
     plugins: [
         {
@@ -55,7 +57,7 @@ module.exports = {
                                 user: "root",
                                 host: "localhost",
                                 global: false,
-                            },escapeEntities: {},
+                            }, escapeEntities: {},
                         }
                     },
                 ],

@@ -3,6 +3,7 @@ import WelcomePage from "../components/WelcomePage/WelcomePage";
 import StickyNavigation from "../components/StickyNavigation/StickyNavigation";
 import ArticleCardList from "../components/ArticleCardList/ArticleCardList";
 import Footer from "../components/Footer/Footer";
+import {SEO} from "../components/seo";
 import {graphql} from "gatsby";
 import './index.css';
 
@@ -35,8 +36,6 @@ export const query = graphql`
 
 export default IndexPage
 
-export const Head = (props) => (
-    <>
-        <title>{props.data.site.siteMetadata.title}</title>
-    </>
+export const Head = () => (
+    <SEO/>
 )
