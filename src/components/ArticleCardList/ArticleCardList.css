@@ -1,0 +1,127 @@
+.article-card-list {
+    overflow: auto;
+
+    margin: 0 auto;
+
+    max-width: 900px;
+}
+
+.article-card {
+    margin: .4em 1em;
+    padding: 1em;
+}
+
+@media (min-width: 35em) {
+    .article-card {
+        margin: 1.5em 1em;
+    }
+}
+
+.article-card-title {
+    margin: 0 0 .4em;
+
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+}
+
+.article-card-title > a {
+    text-decoration: none;
+
+    color: #423C3C;
+
+    transition: color .3s ease;
+}
+
+.article-card-title > a:hover {
+    color: #FF770D;
+}
+
+.article-card-excerpt {
+    margin: 0 0 1.4em;
+
+    font-weight: 300;
+
+    color: #4F4B4B;
+}
+
+.article-card-link {
+    display: inline-block;
+
+    position: relative;
+
+    margin: 0 0 0 -.3em;
+
+    text-decoration: none;
+
+    color: #FF770D;
+}
+
+.article-card-link:before,
+.article-card-link:after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(255, 119, 13, .6);
+    transition: all .3s ease;
+}
+
+.article-card-link:before {
+    height: 0;
+    width: 2px;
+}
+
+.article-card-link:after {
+    height: 2px;
+    width: 0;
+}
+
+.article-card-link:hover:before {
+    height: 50%;
+}
+
+.article-card-link:hover:after {
+    width: 15%;
+}
+
+.article-card-link span {
+    display: block;
+
+    position: relative;
+
+    padding: .2em .3em;
+}
+
+.article-card-link span:before,
+.article-card-link span:after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(255, 119, 13, .6);
+    transition: all .3s ease;
+}
+
+.article-card-link span:before {
+    height: 0;
+    width: 2px;
+}
+
+.article-card-link span:after {
+    height: 2px;
+    width: 0;
+}
+
+.article-card-link span:hover:before {
+    height: 50%;
+}
+
+.article-card-link span:hover:after {
+    width: 15%;
+}

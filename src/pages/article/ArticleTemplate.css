@@ -1,0 +1,103 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: .02em;
+
+    color: #423C3C;
+}
+
+h2 {
+    margin: 1.6em 0 .4em;
+    font-size: 1.7rem;
+    line-height: 1.55;
+}
+
+h3 {
+    margin: .5em 1.1em;
+    font-size: 1.35rem;
+    line-height: 1.35;
+}
+
+p {
+    padding: .5em 0;
+
+    letter-spacing: .01em;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+
+    color: #FF770D;
+}
+
+img {
+    max-width: 100%;
+}
+
+.article-container {
+    margin: 0 auto 6em;
+
+    max-width: 900px;
+    min-height: 70vh;
+}
+
+@media (min-width: 35em) {
+    .article-container {
+        margin: 2em auto 6em;
+    }
+}
+
+@media (min-width: 50em) {
+    .article-container {
+        margin: 4em auto 6em;
+    }
+}
+
+.article {
+    padding: 1em 2em;
+}
+
+.article-front-matter {
+    text-align: center;
+}
+
+.article-title {
+    margin: 0 0 .3em;
+
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .03em;
+    line-height: 1.4;
+}
+
+@media (min-width: 35em) {
+    .article-title {
+        margin: 0 0 .5em;
+
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 50em) {
+    .article-title {
+        margin: 0 0 .7em;
+
+        font-size: 2.4rem;
+    }
+}
+
+.article-body {
+    overflow: auto;
+}
+
+@media (min-width: 35em) {
+    .article-body {
+        margin: 1.5em 0 0;
+    }
+}
+
+@media (min-width: 50em) {
+    .article-body {
+        margin: 2.5em 0 0;
+    }
+}
