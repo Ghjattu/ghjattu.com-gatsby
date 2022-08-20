@@ -1,3 +1,7 @@
+require('dotenv').config({
+    path: '.env'
+});
+
 module.exports = {
     siteMetadata: {
         siteUrl: `https://www.ghjattu.cn`,
@@ -16,24 +20,19 @@ module.exports = {
                 start_url: "/",
                 background_color: "#F9F9F9",
                 theme_color: "#F9F9F9",
-                // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-                // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
                 display: "standalone",
-                icon: "src/images/favicon.png", // This path is relative to the root of the site.
-                // An optional attribute which provides support for CORS check.
-                // If you do not provide a crossOrigin option, it will skip CORS for manifest.
-                // Any invalid keyword or empty string defaults to `anonymous`
+                icon: "src/images/favicon.png",
                 crossOrigin: `use-credentials`,
             },
         },
         'gatsby-plugin-offline',
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
-                name: `article`,
-                path: `${__dirname}/article`,
-            }
-        },
+        // {
+        //     resolve: "gatsby-source-filesystem",
+        //     options: {
+        //         name: `article`,
+        //         path: `${__dirname}/article`,
+        //     }
+        // },
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -41,7 +40,6 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-katex`,
                         options: {
-                            // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
                             strict: `ignore`
                         }
                     },
@@ -63,5 +61,21 @@ module.exports = {
                 ],
             },
         },
+        {
+            resolve: `gatsby-source-mongodb`,
+            options: {
+                connectionString: process.env.MONGODB_URI,
+                dbName: process.env.MONGODB_DATABASE_NAME,
+                collection: `articles`,
+                extraParams: {
+                    ssl: true,
+                    retryWrites: true,
+                    w: `majority`
+                },
+                map: {
+                    articles: { body: `text/markdown` },
+                }
+            }
+        }
     ],
 }
