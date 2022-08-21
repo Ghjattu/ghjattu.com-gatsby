@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.ghjattu.cn`,
+        siteUrl: 'https://ghjattu.cn/',
         title: 'Ghjattu',
         description: `Ghjattu's blog.The content includes programming contest problem solutions, front-end study notes, etc.`,
         author: 'Ghjattu',
@@ -75,6 +75,24 @@ module.exports = {
                 map: {
                     articles: { body: `text/markdown` },
                 }
+            }
+        },
+        {
+            resolve: `gatsby-plugin-sitemap`,
+            options: {
+                query: `
+                {
+                  site {
+                    siteMetadata {
+                      siteUrl
+                    }
+                  }
+                  allSitePage {
+                    nodes {
+                      path
+                    }
+                  }
+                }`,
             }
         }
     ],
